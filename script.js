@@ -1,6 +1,6 @@
 const quizData  = [
     {
-        question:"Who has the overall responsibility for ensuring that all isolation are in place prior to work proceeding",
+        question:"1. Who has the overall responsibility for ensuring that all isolation are in place prior to work proceeding",
         a:"Permit Authority",
         b:"Permit Applicant",
         c:"Authorised Electrical Personel",
@@ -8,7 +8,7 @@ const quizData  = [
        correct:"d",
     },
     {
-        question:"Who is the person likely to carry out isolation and de-isolation of high voltage plant and equipment",
+        question:"2. Who is the person likely to carry out isolation and de-isolation of high voltage plant and equipment",
         a:"Permit Authority",
         b:"Permit Applicant",
         c:"Authorised Electrical Personel",
@@ -16,14 +16,14 @@ const quizData  = [
        correct:"c",
     },
     { 
-        question:"which of the following are the general responsibilities that all personnel have within the permit to work system",
+        question:"3. which of the following are the general responsibilities that all personnel have within the permit to work system",
         a:"not Listening out for site alarms and watching beacons",
         b:"Follow agreed work conditions",
         c:"only wear Full PPE if the weather condition are poor",
         d:"leave the work unattended",
         correct:"a",
     },{
-        question:"who is allowed to enter areas with potential radiocative sourced and what must he have at all time",
+        question:"4. who is allowed to enter areas with potential radiocative sourced and what must he have at all time",
         a:"Permit Authority",
         b:"Classified Person(Radiography)",
         c:"Gas Detector",
@@ -31,7 +31,7 @@ const quizData  = [
        correct:"b",
     },
     {
-        question:"if you are a permit user and have just received your TBT, from worksite Supervisor,what would you do if you didnot understand all the information",
+        question:"5. if you are a permit user and have just received your TBT, from worksite Supervisor,what would you do if you didnot understand all the information",
         a:"Ask Worksite Supervisor to explain the information again",
         b:"Start the work without asking",
         c:"Call the Authorised Electrical Person",
@@ -39,7 +39,7 @@ const quizData  = [
         correct:"a",
     },
     {
-        question:"who has the authority to stop any activty that they consider unsafe ",
+        question:"6. who has the authority to stop any activty that they consider unsafe ",
         a:"The Permit Authority only",
         b:"The Worksite Supervisor",
         c:"Everyone",
@@ -47,7 +47,7 @@ const quizData  = [
         correct:"C"
     },
     {
-        question:"The Permit Applicant has overall responsibility for the correct operation and use of the permit to work system",
+        question:"7. The Permit Applicant has overall responsibility for the correct operation and use of the permit to work system",
         a:"True",
         b:"false",
         c:"maybe",
@@ -55,7 +55,7 @@ const quizData  = [
         correct:"a",
     },
     {
-        question:"Who is responsible for Appointing Worksite Supervisors",
+        question:"8. Who is responsible for Appointing Worksite Supervisors",
         a: "Permit Controller",
         b: "Worksite Supervisor",
         c: "Authorised Electrical Personnel",
@@ -112,7 +112,7 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         }else{
             quiz.innerHTML =`
-            <h2>You answered ${score}/${quizData.length}%questions correctly 
+            <h2>You answered ${Math.round(score/quizData.length*100)}%questions correctly 
             Show Me Cookie</h2>
             <button onclick="location.reload()">Reload</button>
             <button onclick="location.href ='https://quiz-mainpage.vercel.app/';">Back</button>
