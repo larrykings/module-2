@@ -21,11 +21,11 @@ const quizData  = [
         b:"Follow agreed work conditions",
         c:"only wear Full PPE if the weather condition are poor",
         d:"leave the work unattended",
-        correct:"a",
+        correct:"b",
     },{
         question:"4. who is allowed to enter areas with potential radiocative sourced and what must he have at all time",
         a:"Permit Authority",
-        b:"Classified Person(Radiography)",
+        b:"Classified Person(Radiography dosimeter)",
         c:"Gas Detector",
         d:"Permit Controller",
        correct:"b",
